@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------------------------------------------ header */
+
+header{
+    background-color: #8A2BE1;
+    height:50px;
+    display:flex;
+    align-items: center;
+}
+.header-div{
+    flex:1;
+}
+.logo{
+    padding-left:20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero{
+    margin:0;
+    height:550px;
+    background-image: url(../images/Business-Process-Management-Banner-1.png);
+    background-size: contain;
+}
+
+/* ------------------------------------------------------------------ main */
