@@ -46,10 +46,21 @@ header{
     transform: translate(0,0,0);
     transition: all 600ms;
     animation-name: autoplay;
-    animation-duration: 6.5s;
+    animation-duration: 9s;
     animation-direction: alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
     animation-iteration-count: infinite;
+}
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0),0,0);
+    }
+    66%{
+        transform: translate3d(calc(-100% * 1),0,0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
 }
 .slide-item{
     position: relative;
@@ -99,15 +110,22 @@ header{
 }
 input[id="1"]:checked ~ .slide{
     animation:none;
-    transform: translate(0,0,0);
+    transform: translate3d(0,0,0);
 }
 input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
     background-color: white;
 }
 input[id="2"]:checked ~ .slide{
     animation:none;
-    transform: translate(calc(-100% * 1),0,0);
+    transform: translate3d(calc(-100% * 1),0,0);
 }
 input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background-color: white;
+}
+input[id="3"]:checked ~ .slide{
+    animation:none;
+    transform: translate3d(calc(-100% * 2),0,0);
+}
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     background-color: white;
 }
