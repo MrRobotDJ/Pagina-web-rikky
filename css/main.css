@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap');
 body{
     margin:0;
     font-family: 'Open Sans', sans-serif;
@@ -8,10 +7,17 @@ body{
 a{
     text-decoration: none;
     color:white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 img{
     max-width: 100%;
+}
+button{
+    background-color: #E45858;
+    padding:10px 20px;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* ------------------------------------------------------------------ header */
@@ -32,100 +38,45 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+.menu a:hover{
+    color: #2B2C34;
+    text-decoration: overline 2px #E45858;
+    /* line-height: 15px; */
+}
 
-/* ------------------------------------------------------------------ slide */
+/* ------------------------------------------------------------------ hero */
 
-.container-slide{
-    position: relative;
-    max-width: 1920px;
-    width: 100%;
-    overflow: hidden;
+.hero{
+    height:85vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(../images/hero.png);
+    background-size: cover;
 }
-.slide{
+.hero-title{
+    width: 630px;
     display:flex;
-    transform: translate(0,0,0);
-    transition: all 600ms;
-    animation-name: autoplay;
-    animation-duration: 9s;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-    animation-iteration-count: infinite;
+    align-items: center;
+    margin-left:120px;
 }
-@keyframes autoplay{
-    33%{
-        transform: translate3d(calc(-100% * 0),0,0);
-    }
-    66%{
-        transform: translate3d(calc(-100% * 1),0,0);
-    }
-    100%{
-        transform: translate3d(calc(-100% * 2),0,0);
-    }
+.hero-title h1{
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+    font-weight: 400;
+    font-size:45px;
 }
-.slide-item{
-    position: relative;
+.hero-button{
     display:flex;
-    flex-direction:column;
-    flex-shrink: 0;
-    flex-grow: 0;
-    max-width: 100%;
-}
-.pagination{
-    position: absolute;
-    bottom:20px;
-    left:0;
-    display:flex;
-    flex-wrap:wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
-.pagination-item{
-   display:flex;
-   flex-direction: column;
-   align-items: center;
-   border: 2px solid white;
-   width: 16px;
-   height: 16px;
-   border-radius: 4px;
-   overflow: hidden;
-   background: rgba(255,255,255,0.5);
-   margin:0 10px;
-   text-align: center;
-   transition: all 300ms;
-   cursor: pointer;
+.hero-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
 }
-.pagination-item:hover{
-    transform: scale(2);
-}
-.pagination img{
-    display: inline-block;
-    max-width: none;
-    height: 100%;
-    opacity: 0;
-    transition: all 300ms;
-}
-.pagination-item img:hover{
-    opacity: 1;
-}
-input[id="1"]:checked ~ .slide{
-    animation:none;
-    transform: translate3d(0,0,0);
-}
-input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
-    background-color: white;
-}
-input[id="2"]:checked ~ .slide{
-    animation:none;
-    transform: translate3d(calc(-100% * 1),0,0);
-}
-input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
-    background-color: white;
-}
-input[id="3"]:checked ~ .slide{
-    animation:none;
-    transform: translate3d(calc(-100% * 2),0,0);
-}
-input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
-    background-color: white;
+.hero-button button:hover{
+    background-color: #8A2BE1;
 }
