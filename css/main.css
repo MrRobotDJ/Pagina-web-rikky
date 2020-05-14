@@ -19,6 +19,9 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
+main{
+    font-family: 'Roboto Mono', monospace;
+}
 
 /* ------------------------------------------------------------------ header */
 
@@ -61,7 +64,6 @@ header{
     margin-left:120px;
 }
 .hero-title h1{
-    font-family: 'Roboto Mono', monospace;
     color:white;
     font-weight: 400;
     font-size:45px;
@@ -89,9 +91,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    font-family: 'Roboto Mono', monospace;
-    margin:0px 50px;
-    margin-top:40px;
+    margin:40px 50px;
 }
 .us-section{
     width: 100%;
@@ -115,4 +115,41 @@ header{
 .us-text p{
     margin:0;
     font-size:16px;
+}
+
+/* ------------------------------------------------------------------ section "services" */
+.services-container{
+    border-top:5px solid #D1D1E9;
+    margin-top:100px;
+}
+.services-container h3{
+    
+    font-size: 30px;
+    text-align: center;
+    margin:20px 50px;
+    padding:30px 0px;
+    letter-spacing: 4px;
+}
+.services-container-content{
+    margin:0px 50px;
+    display:flex;
+    justify-content: center;
+}
+.container-content{
+    background-color: #D1D1E9;
+    width: 250px;
+    height: 300px;
+    margin:0px 50px;
+    padding:20px 10px;
+}
+.title-content{
+    display: flex;
+}
+.title-content img{
+    width: 80px;
+}
+.title-content h4{
+    font-size: 20px;
+    margin-left: 20px;
+    letter-spacing: 2px;
 }
