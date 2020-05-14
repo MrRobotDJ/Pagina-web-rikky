@@ -27,6 +27,8 @@ header{
     height:50px;
     display:flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .header-div{
     flex:1;
@@ -41,7 +43,6 @@ header{
 .menu a:hover{
     color: #2B2C34;
     text-decoration: overline 2px #E45858;
-    /* line-height: 15px; */
 }
 
 /* ------------------------------------------------------------------ hero */
@@ -79,4 +80,39 @@ header{
 }
 .hero-button button:hover{
     background-color: #8A2BE1;
+}
+
+/* ------------------------------------------------------------------ section "us" */
+
+.us-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Roboto Mono', monospace;
+    margin:0px 50px;
+    margin-top:40px;
+}
+.us-section{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding:10px 0px;
+}
+.us-container img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+}
+.us-text{
+    width: 50%;
+}
+.us-text h3{
+    font-size: 25px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.us-text p{
+    margin:0;
+    font-size:16px;
 }
