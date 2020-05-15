@@ -156,6 +156,7 @@ header{
 }
 
 /* ------------------------------------------------------------------ section "clients & contact" */
+
 .clients-container{
     height: 250px;
     background-color: #D1D1E9;
@@ -192,4 +193,28 @@ header{
 }
 .contact-button button:hover{
     background-color: #8A2BE1;
+}
+
+/* ------------------------------------------------------------------ footer */
+
+footer{
+    background-color: #8A2BE1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 50px;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+    border-top: 20px solid #E45858;
+}
+.social-media i:hover{
+    color:#2B2C34;
+}
+.small-footer{
+    background-color: #8A2BE1;
+    margin:0px;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0px 50px;
+    border-top: 2px solid white;
 }
