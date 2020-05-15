@@ -55,7 +55,7 @@ header{
     height:85vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-image: url(../images/hero.png);
+    background-image: url(https://i.imgur.com/8MW96mD.png);
     background-size: cover;
 }
 .hero-title{
