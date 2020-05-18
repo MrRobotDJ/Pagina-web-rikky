@@ -1,5 +1,7 @@
 @media screen and (max-width:320px){
-
+    .us-text{
+        width: auto;
+    }
 }
 @media screen and (max-width:640px){
 /* ------------------------------------------------------------------ burger-menu */
@@ -21,6 +23,7 @@
 }
 
 /* ------------------------------------------------------------------ menu-transparent */    
+
     .menu{
         position: fixed;
         display: block;
@@ -44,11 +47,63 @@
         margin-bottom: .5em;
         background-image: none;
     }
-
     .burger_button{
         display:block;
     }
+
+/* ------------------------------------------------------------------ menu-transparent */  
+
+    .hero-title{
+        width: auto;
+        text-align: center;
+        margin:auto;
+    }
+    .hero-title h1{
+        font-size: 35px;
+    }
+    
+    
+}
+@media screen and (max-width:768px){
+    .us-container{
+        grid-template-columns: 100%;
+        grid-template-rows: none;
+        grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" ;
+        margin: 30px 10px;
+        height: auto;
+    }
+    .us-section{
+        padding:15px 0px;
+    }
+    .us-container img{
+        width: auto;
+        box-shadow: none;
+    }
+    .us-text{
+        width: 80%;
+        text-align: center;
+    } 
+    .area1{
+        grid-area: area1;
+    }
+    .area2{
+        grid-area: area2;
+    }
+    .area3{
+        grid-area: area3;
+    }
+    .area4{
+        grid-area: area4;
+    }
+    .area5{
+        grid-area: area5;
+    }
+    .area6{
+        grid-area: area6;
+    }
 }
 @media screen and (max-width:1024px){
-
+    .hero-title{
+        width: auto;
+    }
 }

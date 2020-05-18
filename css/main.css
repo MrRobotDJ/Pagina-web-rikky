@@ -69,6 +69,7 @@ header{
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-image: url(../images/hero.png);
+    background-position: center;
     background-size: cover;
     position: relative;
 }
