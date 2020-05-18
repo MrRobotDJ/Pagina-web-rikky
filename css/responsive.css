@@ -1,0 +1,54 @@
+@media screen and (max-width:320px){
+
+}
+@media screen and (max-width:640px){
+/* ------------------------------------------------------------------ burger-menu */
+
+.burger_button{
+    height: 40px;
+    width: 40px;
+    background-color:rgba(138,43,225,.9);
+    border-radius: 20px;
+    text-align: center; /* centrado horizontal*/
+    line-height: 40px; /*centrado vertical*/
+    position:fixed;
+    z-index:6;
+    top:5px;
+    right:5px;
+    color:white; /*da color al icono por ser un texto*/
+    font-size: 24px; /*da el tamaño al icono por ser un texto*/
+    display:none;
+}
+
+/* ------------------------------------------------------------------ menu-transparent */    
+    .menu{
+        position: fixed;
+        display: block;
+        background-color: rgba(138,43,225,.9);
+        z-index: 2;
+        top:0;
+        bottom: 0;
+        right: -100vw; /*este valor hara que se oculte el menu al quitarle todo el ancho de 100vw declarado abajo*/
+        width:100vw; 
+        line-height: 70vh;
+        transition: .3s; /*dara una animacion swipe right*/
+    }
+    .menu.activate{
+        right:0;
+    }
+    .menu a{
+        display:block;
+        height: 40px;
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: .5em;
+        background-image: none;
+    }
+
+    .burger_button{
+        display:block;
+    }
+}
+@media screen and (max-width:1024px){
+
+}
