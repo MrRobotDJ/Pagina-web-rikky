@@ -68,7 +68,7 @@ header{
     max-width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-image: url(../images/hero.png);
+    background-image: url(../images/hero.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
