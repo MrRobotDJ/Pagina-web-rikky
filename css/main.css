@@ -8,6 +8,7 @@ a{
     text-decoration: none;
     color:white;
     font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
 }
 img{
     max-width: 100%;
@@ -43,10 +44,17 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-.menu a:hover{
+.menu a{/*efecto de subrayado*/
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.menu a:hover, a:focus{
     color: #2B2C34;
-    text-decoration-line: overline ;
-    text-decoration-color:#E45858;
+    background-size: 100% 2px;
 }
 
 /* ------------------------------------------------------------------ hero */
@@ -55,7 +63,7 @@ header{
     height:85vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-image: url(https://i.imgur.com/8MW96mD.png);
+    background-image: url(../images/hero.png);
     background-size: cover;
 }
 .hero-title{
@@ -120,7 +128,7 @@ header{
 
 /* ------------------------------------------------------------------ section "services" */
 .services-container{
-    border-top:5px solid #D1D1E9;
+    border-top:5px solid #8A2BE1;
     margin:0px 50px;
     margin-top:100px;   
 }
@@ -131,16 +139,28 @@ header{
     padding:30px 0px;
     letter-spacing: 4px;
 }
-.services-container-content{
-    margin:0px 50px;
+.services{
+    display: flex;
+    justify-content: center;
+}
+.services-content{
+    text-align: center;
+    font-size: 26px;
+    margin:auto; 
+}
+.services-content-images{
+    max-width: 350px;
+} 
+.services-container-details{
+    margin:50px;
     display:flex;
     justify-content: center;
 }
-.container-content{
+.services-details{
     background-color: #D1D1E9;
     width: 250px;
     height: 300px;
-    margin:0px 50px;
+    margin:auto;
     padding:20px 10px;
 }
 .title-content{
