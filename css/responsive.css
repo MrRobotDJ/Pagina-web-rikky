@@ -80,6 +80,13 @@
     .title-content img{
         width: 60px;
     }
+    .contact-container{
+        flex-wrap: wrap;
+    }
+    .contact-button{
+        margin:auto;
+        margin-top:20px;
+    }
 }
 @media screen and (max-width:768px){
     main{
@@ -121,7 +128,6 @@
     .area6{
         grid-area: area6;
     }
-    
 }
 @media screen and (max-width:1024px){
     .hero-title{
@@ -133,5 +139,10 @@
     .services-container-details{
         flex-wrap: wrap;
         margin:10px;
+    }
+    .clients-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
     }
 }
