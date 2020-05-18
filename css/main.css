@@ -185,9 +185,10 @@ header{
 .services-details{
     background-color: #D1D1E9;
     width: 250px;
-    height: 300px;
+    height: auto;
     margin:auto;
     padding:20px 10px;
+    overflow: hidden;
 }
 .title-content{
     display: flex;

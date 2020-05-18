@@ -1,6 +1,13 @@
-@media screen and (max-width:320px){
+@media screen and (max-width:360px){
     .us-text{
         width: auto;
+    }
+    .title-content{
+        display: block;
+        text-align: center;
+    }
+    .services-details{
+        font-size: .7rem;
     }
 }
 @media screen and (max-width:640px){
@@ -61,10 +68,23 @@
     .hero-title h1{
         font-size: 35px;
     }
-    
-    
+    .services-container h3{
+        margin: auto;
+    }
+    .services{
+        flex-wrap: wrap;
+    }
+    .title-content h4{
+        font-size: 1rem;
+    }
+    .title-content img{
+        width: 60px;
+    }
 }
 @media screen and (max-width:768px){
+    main{
+        margin:auto;
+    }
     .us-container{
         grid-template-columns: 100%;
         grid-template-rows: none;
@@ -101,9 +121,17 @@
     .area6{
         grid-area: area6;
     }
+    
 }
 @media screen and (max-width:1024px){
     .hero-title{
         width: auto;
+    }
+    .services-details{
+        margin:10px;
+    }
+    .services-container-details{
+        flex-wrap: wrap;
+        margin:10px;
     }
 }
