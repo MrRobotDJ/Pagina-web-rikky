@@ -2,6 +2,7 @@
 :root{
     --main_color:#00586E;
     --main2-color: #43A865;
+    --main3-color: #5dc7dc;
 }
 body{
     margin:0;
@@ -274,7 +275,7 @@ footer{
     z-index: 2;
 }
 
-/* -------------------------------------------- icono de menu */
+/* -------------------------------------------------------------------- icono de menu */
 
 @font-face {
     font-family: 'icomoon';
@@ -306,3 +307,14 @@ footer{
   .icon-menu:before {
     content: "\e903";
   }
+
+/* -------------------------------------------------------------------- loading-scrollbar */
+
+.progress-indicator {
+    position: fixed;
+    z-index: 1;
+    top: 50;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(165deg, #5dc7dc , #43A865);
+}
